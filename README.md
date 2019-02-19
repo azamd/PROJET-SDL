@@ -28,7 +28,7 @@ cd PROJET-SDL
 make
 ./game
 ```
-# How To Report for an issue
+# How to report for an issue
 
 If you have any problem, please post in the issues tab or mail us at cyberpunk@gmail.com. Any feedback would be appreciated.
 

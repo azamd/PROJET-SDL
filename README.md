@@ -16,6 +16,25 @@ In every single level, the knight will face enemies and will solve puzzles & rid
 
 He will search for the gemstones.
 
+LICENSE
+=======
+
+THE ETERNAL STONES is originally created by [CyberPunk](https://github.com/azamd). Now it is owned by the CyberPunk development team. Please see [AUTHORS](AUTHORS) for full author list.
+```
+Copyright (c) 2019-2020, CyberPunk development team.
+All rights reserved.
+```
+THE ETERNAL STONES is distributed under the terms of GNU General Public License, version 3 (or any later version) as published by the Free Software Foundation. See [LICENSE](LICENSE) for details.
+
+This program made extensive use of the following libraries:
+* [SDL](http://www.libsdl.org/)
+* [SDL_mixer](http://www.libsdl.org/projects/SDL_mixer/)
+* Audio resampler from [foo_input_adplug](https://www.foobar2000.org/components/view/foo_input_adplug)
+* AVI player from [ffmpeg](https://ffmpeg.org/)
+* Image decoder from [stb](https://github.com/nothings/stb)
+
+This program does **NOT** include any code or data files of the original game, which are proprietary and copyrighted by [CyberPynk](https://www.cyberpunk.com.tn) Inc.
+
 
 # HOW TO RUN
 

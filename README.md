@@ -33,7 +33,7 @@ This program made extensive use of the following libraries:
 * AVI player from [ffmpeg](https://ffmpeg.org/)
 * Image decoder from [stb](https://github.com/nothings/stb)
 
-This program does **NOT** include any code or data files of the original game, which are proprietary and copyrighted by [CyberPynk](https://www.cyberpunk.com.tn) Inc.
+This program does **NOT** include any code or data files of the original game, which are proprietary and copyrighted by [CyberPunk](https://www.cyberpunk.com.tn) Inc.
 
 
 # HOW TO RUN

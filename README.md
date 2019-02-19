@@ -19,12 +19,18 @@ and he will search for the gemstones.
 
 # How To run
 
+You need [SDL 1.2](http://www.libsdl.org/download-1.2.php) to run this game.
+- libsdl1.2-dev, libsdl-gfx1.2-dev, libsdl-ttf2.0-dev, libsdl-image1.2-dev, libsdl-mixer1.2-dev
+
 ```
 git clone https://github.com/azamd/PROJET-SDL.git
 cd PROJET-SDL
 make
 ./game
 ```
+#How To Report for an issue
+
+If you have any problem, please post in the issues tab or mail us at cyberpunk@gmail.com. Any feedback would be appreciated.
 
 # WEB Site
 www.cyberpunk.com.tn

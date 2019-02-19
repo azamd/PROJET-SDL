@@ -8,13 +8,9 @@ The game is composed of a main menu and 3 levels.
 
 # Idea Of The Game
 
-A knight passes 3 levels
+A knight passes 3 levels, Every level exists in a different place
 
-Every level exists in a different place
-
-In every single level, the knight will face enemies and will solve puzzles & riddles.
-
-and he will search for the gemstones.
+In every single level, the knight will face enemies, will solve puzzles & riddles and will search for the gemstones.
 
 
 # How To run

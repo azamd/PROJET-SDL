@@ -1,19 +1,20 @@
-# CyberPunk 2D Game Project (2019)
-Le projet demandé est un jeu 2D sur ubuntu avec la bibliothèque SDL1.2 (image,vidéo,ttf,mix,..)
+# CYBERPUNK 2D Game Project (2019)
 
-# Eternal Stones
+The project concept is a 2D videogame developed on Ubuntu using SDL1.2 library (image,video,ttf,mix...)
 
-Le jeu est composé d'un Menu + 3 Stages
+# THE ETERNAL STONES
 
-# Idée du jeu
+The game is composed of a main menu and 3 levels.
 
-Un aventurier va faire 3 stages.
+# Idea Of The Game
 
-Chaque stage dans un endroit different
+A knight passes 3 levels
 
-Dans chaque stage ,l'aventurier va rencontre des ennemies et resoudre des enigmes.
+Every level exists in a different place
 
-Il y a des points de vies, 'Gems' a ramasser ..
+In every single level, the knight will face enemies and will solve puzzles & riddles.
+
+and he will search for the gemstones.
 
 
 # How To run
@@ -26,4 +27,4 @@ make
 ```
 
 # WEB Site
-www.cyberpunk.tn
+www.cyberpunk.com.tn

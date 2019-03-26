@@ -9,7 +9,6 @@
 void scrolling(SDL_Surface *screen,SDL_Surface *imgfond,SDL_Surface *imgperso,int running,SDL_Rect posfond,SDL_Rect positionmilieu)
 {
 
-int x=0;
 
    //definition des coordonnées ( sur axe (x,y) et largeur + hauteur)
     posfond.x = 0;

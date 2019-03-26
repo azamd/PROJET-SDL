@@ -40,7 +40,7 @@ void scrolling(SDL_Surface *screen,SDL_Surface *imgfond ,int running,SDL_Rect po
             	
                 if  ( posfond.x<=5760)
        
-            posfond.x += 10;
+            posfond.x += 10;   //translation du background vers la gauche
      
             
        
@@ -54,7 +54,7 @@ void scrolling(SDL_Surface *screen,SDL_Surface *imgfond ,int running,SDL_Rect po
             case SDLK_LEFT: // appui sur la flèche gauche
             	if ( posfond.x>=0)
         
-            posfond.x -= 10;
+            posfond.x -= 10;  //translation du background vers la droite
      
          
                 SDL_BlitSurface(imgfond,&posfond,screen, NULL);

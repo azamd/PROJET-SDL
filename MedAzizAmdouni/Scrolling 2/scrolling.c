@@ -9,7 +9,7 @@
 void scrolling(SDL_Surface *screen,SDL_Surface *imgfond,SDL_Surface *imgperso,int running,SDL_Rect posfond,SDL_Rect positionmilieu)
 {
 
-int x=0,i;
+int x=0;
 
    //definition des coordonnées ( sur axe (x,y) et largeur + hauteur)
     posfond.x = 0;
@@ -19,7 +19,7 @@ int x=0,i;
 
     
 
-    //definition des coordonnées du milieu
+    //definition des coordonnées du milieu (positionmilieu correspond a la position de l'objet)
     positionmilieu.x = 800/ 2 - 50 / 2;
     positionmilieu.y = 420 ;
      SDL_Init(SDL_INIT_VIDEO);//initialisation video de la bib SDL
@@ -28,12 +28,12 @@ int x=0,i;
    
 
     
-    imgfond = IMG_Load("backg.png");//chargement de l'image
-    imgperso = IMG_Load("box.png");//chargement de l'image
+    imgfond = IMG_Load("backg.png");//chargement de l'image du fond (Background)
+    imgperso = IMG_Load("box.png");//chargement de l'image de l'objet (Carré)
     
 
   SDL_BlitSurface(imgfond,&posfond,screen, NULL);//chargement du background dans une position précie
-  SDL_BlitSurface(imgperso,NULL,screen, &positionmilieu);//chargement de l'image du personnage
+  SDL_BlitSurface(imgperso,NULL,screen, &positionmilieu);//chargement de l'image de l'objet (Carré)
   SDL_Flip(screen);//mise a jour
   
  if(Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, MIX_DEFAULT_CHANNELS, 1024) == -1)// initiliser mixer
@@ -41,10 +41,10 @@ int x=0,i;
         printf("%s",Mix_GetError());
     }
     Mix_Music *musique;//pointeur musique 
-    Mix_AllocateChannels(20);//
+    Mix_AllocateChannels(20);
     musique = Mix_LoadMUS("musique.mp3");//chargement musique
-    Mix_PlayMusic(musique, -1);//repeter  music (boucle infinie)
-    Mix_VolumeMusic(MIX_MAX_VOLUME / 1);//MIX_MAX_VOLUME se defere de chaque pc (peut etre 1 ou 2 seulement)
+    Mix_PlayMusic(musique, -1);//repeter musique (boucle infinie)
+    Mix_VolumeMusic(MIX_MAX_VOLUME / 1);//MIX_MAX_VOLUME se defere dans chaque pc (peut etre 1 ou 2 seulement)
 
    
     SDL_Event event;//declaration des evenements
@@ -55,7 +55,7 @@ int x=0,i;
         SDL_WaitEvent(&event);
         switch(event.type)
         {
-            case SDL_QUIT: //quiter le programme si on appuit sur le bouton (X) de fermiture
+            case SDL_QUIT: //quiter le programme si on appuit sur le bouton (X) de fermeture
                 running = 0;
                 break;
             case SDL_KEYDOWN: //si on appuit sur un bouton du clavier
@@ -68,9 +68,9 @@ int x=0,i;
             	
                 if  (positionmilieu.x>=516 && posfond.x<=7200)
         
-            posfond.x += 10;// la position de la limite de l'image du fond avance en vitesse =10
+            posfond.x += 10;// translation horizontale du Background vers la gauche
         else if (positionmilieu.x<=750) 
-            positionmilieu.x +=20;//la position milieu avance en vitesse =20
+            positionmilieu.x +=20;// translation horizontale de l'objet (Carré) vers la droite
             
        
                 SDL_BlitSurface(imgfond,&posfond,screen, NULL);//mise a jour du position de l'image du fond
@@ -83,9 +83,9 @@ int x=0,i;
             case SDLK_LEFT: // appui sur la Flèche gauche
             	if (positionmilieu.x<=258 && posfond.x>=0)
         
-            posfond.x -= 10; //la position de la limite de l'image du fond recule en vitesse =10
+            posfond.x -= 10; // translation horizontale du Background vers la droite
       else if (positionmilieu.x>=0)
-      positionmilieu.x -= 20;//la position milieu avance en vitesse =20
+      positionmilieu.x -= 20;// translation horizontale de l'objet (Carré) vers la gauche
 
 SDL_BlitSurface(imgfond,&posfond, screen, NULL);//mise a jour du position de l'image du fond
       SDL_BlitSurface(imgperso,NULL,screen, &positionmilieu);//mise a jour du position de l'image du personnage en position milieu

@@ -36,7 +36,7 @@ void scrolling(SDL_Surface *screen,SDL_Surface *imgfond ,int running,SDL_Rect po
 
         {
 
-            case SDLK_RIGHT: // appui sure la flèche droite
+            case SDLK_RIGHT: // appui sur la flèche droite
             	
                 if  ( posfond.x<=5760)
        

@@ -29,7 +29,7 @@ int main(){
 		{
 			if(check_collision(&p, &p1, 1)==0)
 				deplacer(&p, 1);
-			else v.nb-1;
+			else v.nb--;
 		}
 		else if(input.gauche==1){
 			if(check_collision(&p, &p1, 2)==0)
@@ -43,7 +43,7 @@ int main(){
 			if(check_collision(&p, &p1, 4)==0)
 				deplacer(&p, 4);
 		}
-		//v.nb=3;
+		
 
 
 }

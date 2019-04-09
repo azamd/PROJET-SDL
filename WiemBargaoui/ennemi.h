@@ -13,7 +13,7 @@ typedef struct ennemis
 
 void initialiserennemi(ennemis *ennemi);
 void freesurfaceennemi(ennemis *ennemi);
-ennemis mouvennemi(ennemis ennemi,perso perso,int d,int q,SDL_Rect camera,SDL_Surface *ecran,int *ennmouv,int *w,int *y,int *data);
+ennemis mouvennemi(ennemis ennemi,perso perso,int d,int q,SDL_Rect camera,SDL_Surface *ecran,int *ennmouv,int *w,int *y);
 int splitennemi(int y);
 void afficherennemi(ennemis ennemi,SDL_Surface *ecran,int y);
 #endif 

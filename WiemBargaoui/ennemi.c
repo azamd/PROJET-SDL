@@ -21,7 +21,7 @@ SDL_FreeSurface(ennemi->fond2);
 SDL_FreeSurface(ennemi->fonda);
 SDL_FreeSurface(ennemi->fondb);
 }
-ennemis mouvennemi(ennemis ennemi,perso perso,int d,int q,SDL_Rect camera,SDL_Surface *ecran,int *ennmouv,int *w,int *y,int *data)
+ennemis mouvennemi(ennemis ennemi,perso perso,int d,int q,SDL_Rect camera,SDL_Surface *ecran,int *ennmouv,int *w,int *y)
 {
 int r ;
 r = rand();
@@ -52,7 +52,7 @@ ennemi.position.y = 240 ;
 }
 if((((ennemi.position.x-perso.position.x<300&&ennemi.position.x-perso.position.x>0)||(perso.position.x-ennemi.position.x<300&&perso.position.x-ennemi.position.x>0))&&perso.position.y==255&&ennemi.position.y == 240)||(((ennemi.position.x-perso.position.x<300&&ennemi.position.x-perso.position.x>0)||(perso.position.x-ennemi.position.x<300&&perso.position.x-ennemi.position.x>0))&&perso.position.y==435&&ennemi.position.y == 420))
 {
-(*data)=3;
+
 ennemi.position2.x = ennemi.position.x + 50;
 ennemi.position2.y = ennemi.position.y - 70;
 SDL_BlitSurface(ennemi.fond,NULL, ecran,&ennemi.position2);

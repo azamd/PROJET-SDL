@@ -1,0 +1,19 @@
+20 - 04 - 2019
+
+** Updates
+
+- Documentation Added (Only Doxygen).
+- In Game Menu Added (Integrated Successfully).
+- AI Added (Integrated Successfully).
+- Main Menu Speed improved.
+- Enemy Mouvement Speed Added + 40 (buggy).
+
+** Optimisation
+- Enemy AI improved.
+- In game menu runloop fixed.
+- Main Menu crashes fixed.
+
+** Bugs
+- Enigmes Bugs after resolution.
+- Full Screen
+

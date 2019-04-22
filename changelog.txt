@@ -1,8 +1,7 @@
 20 - 04 - 2019
 
-** Updates
-
-- Documentation Added (Only Doxygen).
+** Updates (done)
+- Documentation Added (Only Doxygen)
 - In Game Menu Added (Integrated Successfully).
 - AI Added (Integrated Successfully).
 - Main Menu Speed improved.
@@ -16,4 +15,42 @@
 ** Bugs
 - Enigmes Bugs after resolution.
 - Full Screen
+
+=============================================================================
+23 - 04 - 2019 / 01:21
+
+** Updates (done)
+- Documentation Updated from each member.
+- Add volume option to settings (integrated).
+- Mini Map (not integrated).
+
+** Optimisation
+- Enemy mouvement speed bug fixed.
+- In game menu bug fixed.
+- Enigme bug fixed.
+
+**Bugs
+- Intro lag (FPS drop + High RAM usage)
+- FULLSCREEN
+
+** TO DO
+Member: Wiem
+- Add 3 INTRO before the game menu.
+- Add Credits animation.
+Member: Aziz
+- Add Save/Load Settings.
+Member: Rahim
+- Shared screen.
+- Add Gems in the map (code + graphic).
+- Graphic supports (2nd character + 2nd level).
+Member: Yassine
+- Mini Map
+- Optimize and fix enigmes.
+Member: Mohamed
+- Integration.
+- Rotozoom/gfx
+- Optimize all the codes
+- Increase game fps
+
+
 

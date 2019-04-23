@@ -51,6 +51,7 @@ Member: Mohamed
 - Rotozoom/gfx
 - Optimize all the codes
 - Increase game fps
+- Collapse project files into seperated folders
 
 
 

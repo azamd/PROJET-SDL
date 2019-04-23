@@ -1,0 +1,121 @@
+\hypertarget{collision_8c}{}\section{collision.\+c File Reference}
+\label{collision_8c}\index{collision.\+c@{collision.\+c}}
+{\ttfamily \#include \char`\"{}fonction.\+h\char`\"{}}\\*
+Include dependency graph for collision.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Uint32 \hyperlink{collision_8c_a62e59210ffa856d8cc4443972ab6b49f}{getpixel} (S\+D\+L\+\_\+\+Surface $\ast$surface, int x, int y)
+\item 
+S\+D\+L\+\_\+\+Rect \hyperlink{collision_8c_a622a012cafa9f1d28d7acbd6f54d035b}{collision} (S\+D\+L\+\_\+\+Rect camera, \hyperlink{structperso}{perso} \hyperlink{structperso}{perso})
+\item 
+int \hyperlink{collision_8c_a03dc9846b7bb33f17ba5e95642a7eae8}{collisionescalier} (\hyperlink{structperso}{perso} \hyperlink{structperso}{perso}, \hyperlink{structescalier}{escalier} \hyperlink{structescalier}{escalier}, S\+D\+L\+\_\+\+Rect camera)
+\item 
+void \hyperlink{collision_8c_a5d0442d691e0654d51f1019b9e1a10b6}{collisionennemi} (\hyperlink{structperso}{perso} $\ast$\hyperlink{structperso}{perso}, \hyperlink{structennemis}{ennemis} $\ast$ennemi, S\+D\+L\+\_\+\+Rect $\ast$camera, \hyperlink{structvie}{vie} $\ast$\hyperlink{structvie}{vie})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{collision.\+c@{collision.\+c}!collision@{collision}}
+\index{collision@{collision}!collision.\+c@{collision.\+c}}
+\subsubsection[{\texorpdfstring{collision(\+S\+D\+L\+\_\+\+Rect camera, perso perso)}{collision(SDL_Rect camera, perso perso)}}]{\setlength{\rightskip}{0pt plus 5cm}S\+D\+L\+\_\+\+Rect collision (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Rect}]{camera, }
+\item[{{\bf perso}}]{perso}
+\end{DoxyParamCaption}
+)}\hypertarget{collision_8c_a622a012cafa9f1d28d7acbd6f54d035b}{}\label{collision_8c_a622a012cafa9f1d28d7acbd6f54d035b}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8c_a622a012cafa9f1d28d7acbd6f54d035b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{collision.\+c@{collision.\+c}!collisionennemi@{collisionennemi}}
+\index{collisionennemi@{collisionennemi}!collision.\+c@{collision.\+c}}
+\subsubsection[{\texorpdfstring{collisionennemi(perso $\ast$perso, ennemis $\ast$ennemi, S\+D\+L\+\_\+\+Rect $\ast$camera, vie $\ast$vie)}{collisionennemi(perso *perso, ennemis *ennemi, SDL_Rect *camera, vie *vie)}}]{\setlength{\rightskip}{0pt plus 5cm}void collisionennemi (
+\begin{DoxyParamCaption}
+\item[{{\bf perso} $\ast$}]{perso, }
+\item[{{\bf ennemis} $\ast$}]{ennemi, }
+\item[{S\+D\+L\+\_\+\+Rect $\ast$}]{camera, }
+\item[{{\bf vie} $\ast$}]{vie}
+\end{DoxyParamCaption}
+)}\hypertarget{collision_8c_a5d0442d691e0654d51f1019b9e1a10b6}{}\label{collision_8c_a5d0442d691e0654d51f1019b9e1a10b6}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8c_a5d0442d691e0654d51f1019b9e1a10b6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{collision.\+c@{collision.\+c}!collisionescalier@{collisionescalier}}
+\index{collisionescalier@{collisionescalier}!collision.\+c@{collision.\+c}}
+\subsubsection[{\texorpdfstring{collisionescalier(perso perso, escalier escalier, S\+D\+L\+\_\+\+Rect camera)}{collisionescalier(perso perso, escalier escalier, SDL_Rect camera)}}]{\setlength{\rightskip}{0pt plus 5cm}int collisionescalier (
+\begin{DoxyParamCaption}
+\item[{{\bf perso}}]{perso, }
+\item[{{\bf escalier}}]{escalier, }
+\item[{S\+D\+L\+\_\+\+Rect}]{camera}
+\end{DoxyParamCaption}
+)}\hypertarget{collision_8c_a03dc9846b7bb33f17ba5e95642a7eae8}{}\label{collision_8c_a03dc9846b7bb33f17ba5e95642a7eae8}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{collision_8c_a03dc9846b7bb33f17ba5e95642a7eae8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8c_a03dc9846b7bb33f17ba5e95642a7eae8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{collision.\+c@{collision.\+c}!getpixel@{getpixel}}
+\index{getpixel@{getpixel}!collision.\+c@{collision.\+c}}
+\subsubsection[{\texorpdfstring{getpixel(\+S\+D\+L\+\_\+\+Surface $\ast$surface, int x, int y)}{getpixel(SDL_Surface *surface, int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}Uint32 getpixel (
+\begin{DoxyParamCaption}
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{surface, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{collision_8c_a62e59210ffa856d8cc4443972ab6b49f}{}\label{collision_8c_a62e59210ffa856d8cc4443972ab6b49f}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{collision_8c_a62e59210ffa856d8cc4443972ab6b49f_icgraph}
+\end{center}
+\end{figure}
+
+

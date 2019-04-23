@@ -1,0 +1,223 @@
+\hypertarget{ennemi_8h}{}\section{ennemi.\+h File Reference}
+\label{ennemi_8h}\index{ennemi.\+h@{ennemi.\+h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ennemi_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structennemis}{ennemis}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structennemis}{ennemis} \hyperlink{ennemi_8h_acd841d56b5672f28a310306985c7144b}{ennemis}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ennemi_8h_a7e97b6df5122a4ba309bff21a456dafa}{initialiserennemi} (\hyperlink{structennemis}{ennemis} $\ast$ennemi)
+\begin{DoxyCompactList}\small\item\em to initialize ennemi ennemi \end{DoxyCompactList}\item 
+void \hyperlink{ennemi_8h_ac2414a6bd133a4ad2668dae5a823cdb3}{freesurfaceennemi} (\hyperlink{structennemis}{ennemis} $\ast$ennemi)
+\begin{DoxyCompactList}\small\item\em to free surface ennemi ennemi \end{DoxyCompactList}\item 
+\hyperlink{structennemis}{ennemis} \hyperlink{ennemi_8h_a314380a1c34c5fcec5d045656d6daf82}{mouvennemi} (\hyperlink{structennemis}{ennemis} ennemi, \hyperlink{structperso}{perso} \hyperlink{structperso}{perso}, int d, int q, S\+D\+L\+\_\+\+Rect camera, S\+D\+L\+\_\+\+Surface $\ast$ecran, int $\ast$ennmouv, int $\ast$w, int $\ast$y)
+\begin{DoxyCompactList}\small\item\em to move the ennemi \end{DoxyCompactList}\item 
+int \hyperlink{ennemi_8h_aebc98d93ce6c740a80cfe951a2303af9}{splitennemi} (int y)
+\begin{DoxyCompactList}\small\item\em to split ennemi \end{DoxyCompactList}\item 
+void \hyperlink{ennemi_8h_a3dc49b6654ac3b32977ce5ba4901c498}{afficherennemi} (\hyperlink{structennemis}{ennemis} ennemi, S\+D\+L\+\_\+\+Surface $\ast$ecran, int y)
+\begin{DoxyCompactList}\small\item\em to show ennemi \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{ennemi.\+h@{ennemi.\+h}!ennemis@{ennemis}}
+\index{ennemis@{ennemis}!ennemi.\+h@{ennemi.\+h}}
+\subsubsection[{\texorpdfstring{ennemis}{ennemis}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf ennemis} {\bf ennemis}}\hypertarget{ennemi_8h_acd841d56b5672f28a310306985c7144b}{}\label{ennemi_8h_acd841d56b5672f28a310306985c7144b}
+
+
+\subsection{Function Documentation}
+\index{ennemi.\+h@{ennemi.\+h}!afficherennemi@{afficherennemi}}
+\index{afficherennemi@{afficherennemi}!ennemi.\+h@{ennemi.\+h}}
+\subsubsection[{\texorpdfstring{afficherennemi(ennemis ennemi, S\+D\+L\+\_\+\+Surface $\ast$ecran, int y)}{afficherennemi(ennemis ennemi, SDL_Surface *ecran, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficherennemi (
+\begin{DoxyParamCaption}
+\item[{{\bf ennemis}}]{ennemi, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{ennemi_8h_a3dc49b6654ac3b32977ce5ba4901c498}{}\label{ennemi_8h_a3dc49b6654ac3b32977ce5ba4901c498}
+
+
+to show ennemi 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ennemi} & ennemis \\
+\hline
+{\em perso} & perso \\
+\hline
+{\em ecran} & ecran \\
+\hline
+{\em y} & y\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ennemi_8h_a3dc49b6654ac3b32977ce5ba4901c498_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ennemi.\+h@{ennemi.\+h}!freesurfaceennemi@{freesurfaceennemi}}
+\index{freesurfaceennemi@{freesurfaceennemi}!ennemi.\+h@{ennemi.\+h}}
+\subsubsection[{\texorpdfstring{freesurfaceennemi(ennemis $\ast$ennemi)}{freesurfaceennemi(ennemis *ennemi)}}]{\setlength{\rightskip}{0pt plus 5cm}void freesurfaceennemi (
+\begin{DoxyParamCaption}
+\item[{{\bf ennemis} $\ast$}]{ennemi}
+\end{DoxyParamCaption}
+)}\hypertarget{ennemi_8h_ac2414a6bd133a4ad2668dae5a823cdb3}{}\label{ennemi_8h_ac2414a6bd133a4ad2668dae5a823cdb3}
+
+
+to free surface ennemi ennemi 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ennemi} & the ennemi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ennemi_8h_ac2414a6bd133a4ad2668dae5a823cdb3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ennemi.\+h@{ennemi.\+h}!initialiserennemi@{initialiserennemi}}
+\index{initialiserennemi@{initialiserennemi}!ennemi.\+h@{ennemi.\+h}}
+\subsubsection[{\texorpdfstring{initialiserennemi(ennemis $\ast$ennemi)}{initialiserennemi(ennemis *ennemi)}}]{\setlength{\rightskip}{0pt plus 5cm}void initialiserennemi (
+\begin{DoxyParamCaption}
+\item[{{\bf ennemis} $\ast$}]{ennemi}
+\end{DoxyParamCaption}
+)}\hypertarget{ennemi_8h_a7e97b6df5122a4ba309bff21a456dafa}{}\label{ennemi_8h_a7e97b6df5122a4ba309bff21a456dafa}
+
+
+to initialize ennemi ennemi 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ennemi} & the ennemi \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ennemi_8h_a7e97b6df5122a4ba309bff21a456dafa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ennemi.\+h@{ennemi.\+h}!mouvennemi@{mouvennemi}}
+\index{mouvennemi@{mouvennemi}!ennemi.\+h@{ennemi.\+h}}
+\subsubsection[{\texorpdfstring{mouvennemi(ennemis ennemi, perso perso, int d, int q, S\+D\+L\+\_\+\+Rect camera, S\+D\+L\+\_\+\+Surface $\ast$ecran, int $\ast$ennmouv, int $\ast$w, int $\ast$y)}{mouvennemi(ennemis ennemi, perso perso, int d, int q, SDL_Rect camera, SDL_Surface *ecran, int *ennmouv, int *w, int *y)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf ennemis} mouvennemi (
+\begin{DoxyParamCaption}
+\item[{{\bf ennemis}}]{ennemi, }
+\item[{{\bf perso}}]{perso, }
+\item[{int}]{d, }
+\item[{int}]{q, }
+\item[{S\+D\+L\+\_\+\+Rect}]{camera, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran, }
+\item[{int $\ast$}]{ennmouv, }
+\item[{int $\ast$}]{w, }
+\item[{int $\ast$}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{ennemi_8h_a314380a1c34c5fcec5d045656d6daf82}{}\label{ennemi_8h_a314380a1c34c5fcec5d045656d6daf82}
+
+
+to move the ennemi 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ennemi} & ennemis \\
+\hline
+{\em perso} & perso \\
+\hline
+{\em d} & to move to the left \\
+\hline
+{\em q} & move to the right \\
+\hline
+{\em camera} & camera \\
+\hline
+{\em ecran} & ecran\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+ennemi 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ennemi_8h_a314380a1c34c5fcec5d045656d6daf82_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{ennemi.\+h@{ennemi.\+h}!splitennemi@{splitennemi}}
+\index{splitennemi@{splitennemi}!ennemi.\+h@{ennemi.\+h}}
+\subsubsection[{\texorpdfstring{splitennemi(int y)}{splitennemi(int y)}}]{\setlength{\rightskip}{0pt plus 5cm}int splitennemi (
+\begin{DoxyParamCaption}
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\hypertarget{ennemi_8h_aebc98d93ce6c740a80cfe951a2303af9}{}\label{ennemi_8h_aebc98d93ce6c740a80cfe951a2303af9}
+
+
+to split ennemi 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+y 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ennemi_8h_aebc98d93ce6c740a80cfe951a2303af9_icgraph}
+\end{center}
+\end{figure}
+
+

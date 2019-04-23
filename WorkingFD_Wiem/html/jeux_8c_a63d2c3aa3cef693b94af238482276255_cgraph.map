@@ -1,0 +1,31 @@
+<map id="jeux" name="jeux">
+<area shape="rect" id="node2" href="$level1_8c.html#afd6b3dbc219eac712d9b2075aea92cba" title="level1" alt="" coords="100,639,156,665"/>
+<area shape="rect" id="node3" href="$map_8c.html#a4064b8904eab2845f682ad0e607a49c8" title="initialiserfond" alt="" coords="219,5,318,32"/>
+<area shape="rect" id="node4" href="$map_8c.html#a7cf4cb6a7c74dd380411f9961a0e4ccf" title="initialiserescalier" alt="" coords="209,56,328,83"/>
+<area shape="rect" id="node5" href="$perso_8c.html#a92275cef2e188dc29db04259de954b11" title="initialiserperso" alt="" coords="216,107,321,133"/>
+<area shape="rect" id="node6" href="$enigme_8c.html#ad454a117b28e1ea763edf855960bf66a" title="init_enigme" alt="" coords="225,157,313,184"/>
+<area shape="rect" id="node7" href="$ennemi_8c.html#a7e97b6df5122a4ba309bff21a456dafa" title="to initialize ennemi ennemi " alt="" coords="211,208,326,235"/>
+<area shape="rect" id="node8" href="$perso_8c.html#a745a3d387fc9547b8474bc07488812ef" title="initialiservie" alt="" coords="223,259,314,285"/>
+<area shape="rect" id="node9" href="$level1_8c.html#a4b08faa6aa2777a535b1db0b48669e0e" title="load" alt="" coords="245,309,292,336"/>
+<area shape="rect" id="node10" href="$level1_8c.html#a29092ba4fe09a81f884fc05a61498891" title="savee" alt="" coords="240,360,297,387"/>
+<area shape="rect" id="node11" href="$perso_8c.html#a0d74fe9f6951a7e303fa3adf86756c0d" title="mouv" alt="" coords="241,411,296,437"/>
+<area shape="rect" id="node14" href="$scrolling_8c.html#a324a7a80a00888932d197cc42f394ecf" title="scrolling" alt="" coords="233,461,304,488"/>
+<area shape="rect" id="node15" href="$collision_8c.html#a622a012cafa9f1d28d7acbd6f54d035b" title="collision" alt="" coords="234,512,303,539"/>
+<area shape="rect" id="node16" href="$perso_8c.html#a5cf5f88023e7fd513201ea324f7162a1" title="mouvement" alt="" coords="223,563,314,589"/>
+<area shape="rect" id="node17" href="$enigme_8c.html#a3a50a6a4011cda91784c0bcfa053c103" title="generate_afficher" alt="" coords="207,613,330,640"/>
+<area shape="rect" id="node18" href="$enigme_8c.html#ae855a03b9d7f7619bac3843306965df9" title="resolution" alt="" coords="229,664,308,691"/>
+<area shape="rect" id="node19" href="$enigme_8c.html#ac0874aeffd6ff2e1b39ae34e1d7d8618" title="afficher_resultat" alt="" coords="211,715,326,741"/>
+<area shape="rect" id="node20" href="$ennemi_8c.html#aebc98d93ce6c740a80cfe951a2303af9" title="to split ennemi " alt="" coords="225,765,313,792"/>
+<area shape="rect" id="node21" href="$collision_8c.html#a5d0442d691e0654d51f1019b9e1a10b6" title="collisionennemi" alt="" coords="213,816,324,843"/>
+<area shape="rect" id="node22" href="$map_8c.html#a001a49bb272b895257a64483cdc8b366" title="afficherfond" alt="" coords="223,867,314,893"/>
+<area shape="rect" id="node23" href="$perso_8c.html#a8162a4e4d9c384228fa988ca709380c3" title="afficherperso" alt="" coords="220,917,317,944"/>
+<area shape="rect" id="node24" href="$perso_8c.html#a5420109bd929fed754259b81a6f2114c" title="affichervie" alt="" coords="227,968,310,995"/>
+<area shape="rect" id="node25" href="$ennemi_8c.html#a314380a1c34c5fcec5d045656d6daf82" title="to move the ennemi " alt="" coords="221,1019,317,1045"/>
+<area shape="rect" id="node26" href="$ennemi_8c.html#a3dc49b6654ac3b32977ce5ba4901c498" title="to show ennemi " alt="" coords="215,1069,322,1096"/>
+<area shape="rect" id="node27" href="$map_8c.html#a08b3617137cb19509605b7d983b3ff4b" title="freesurfacemap" alt="" coords="213,1120,325,1147"/>
+<area shape="rect" id="node28" href="$perso_8c.html#a264887adbc370edb98b74e418927323c" title="freefurfaceperso" alt="" coords="211,1171,327,1197"/>
+<area shape="rect" id="node29" href="$ennemi_8c.html#ac2414a6bd133a4ad2668dae5a823cdb3" title="to free surface ennemi ennemi " alt="" coords="204,1221,333,1248"/>
+<area shape="rect" id="node30" href="$perso_8c.html#a17d93e29ecad63f37a31da923cef8650" title="freesurfacevie" alt="" coords="217,1272,321,1299"/>
+<area shape="rect" id="node12" href="$collision_8c.html#a03dc9846b7bb33f17ba5e95642a7eae8" title="collisionescalier" alt="" coords="381,461,496,488"/>
+<area shape="rect" id="node13" href="$collision_8c.html#a62e59210ffa856d8cc4443972ab6b49f" title="getpixel" alt="" coords="544,461,611,488"/>
+</map>

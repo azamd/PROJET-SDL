@@ -1,0 +1,6 @@
+<map id="volumme" name="volumme">
+<area shape="rect" id="node2" href="$menuingame_8h.html#ac2889af7c2afc507a0ce9b5d5338809d" title="To set the second menu in the game . " alt="" coords="128,5,224,32"/>
+<area shape="rect" id="node3" href="$level1_8h.html#afd6b3dbc219eac712d9b2075aea92cba" title="level1" alt="" coords="272,5,328,32"/>
+<area shape="rect" id="node4" href="$jeux_8h.html#ad38cf6359c3f38f66e6aa46a96ecc347" title="jeux" alt="" coords="376,5,423,32"/>
+<area shape="rect" id="node5" href="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="471,5,521,32"/>
+</map>

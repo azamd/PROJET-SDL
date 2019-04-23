@@ -27,7 +27,7 @@
 ** Optimisation
 - Enemy mouvement speed bug fixed.
 - In game menu bug fixed.
-- Enigme bug fixed.
+- Enigme bug fixed (Not 100%)
 
 **Bugs
 - Intro lag (FPS drop + High RAM usage)

@@ -10,6 +10,6 @@ typedef struct
 
 void init_enigme(enigme * enig) ;
 void  generate_afficher (SDL_Surface * ecran  , char image [],enigme *enig,int *alea) ;
- int solution_e (char image []) ;
+int solution_e (char image []) ;
 int resolution (int * running,int *run);
 void afficher_resultat (SDL_Surface * ecran,int sol,int r,enigme *en) ;

@@ -47,7 +47,8 @@ vie vie;
 map map ;
 escalier escalier;
 ennemis ennemi ;
-enigme  enig;
+/* ENIGMES_DECLARATION */
+enigme  enig,en;
 int ennmouv,w=10;
 int prevd,prevq;
 int t1=0,t2=0;
@@ -71,14 +72,16 @@ camera.y=0;
 initialiserfond(&map);
 initialiserescalier(&escalier);
 initialiserperso(&perso);
- ///init_enigme(&enig);
+//ENIGMES_INIT
+init_enigme(&enig);
+init_enigme(&en);
 initialiserennemi(&ennemi);
 int running1 =1 ;
 
 
 initialiservie(&vie) ;
 SDL_ShowCursor(SDL_DISABLE);
-//SDL_LockSurface;
+
 load(lvl,&ennemi,&perso,page1,page2,&vie,&saut,&camera,&continuer,save);
 while (continuer)
 {
@@ -191,20 +194,43 @@ camera = collision(camera,perso);
 printf("h = %d\n",h);
 perso=mouvement(perso,camera,h,d,q,z,s,escalier,prevd,prevq,&saut,jump,speed);
 
+//START_ENIGMES
 
- /*if ( perso.position.x>=500 && firsttime==0) {  
+if ( perso.position.x>=500 && firsttime==0) {  
      firsttime=1 ;
-generate_afficher ( ecran  , image ,&enig,&alea) ;
-        run1 =1  ;
-      while(run1)
-{
+  generate_afficher ( ecran  , image ,&enig,&alea) ;
+  sol=solution_e (image);
+do{
+  run1 =1  ;
+ SDL_BlitSurface(enig.img,NULL,ecran,&(enig.p)) ;
+  SDL_Flip(ecran) ;
      do{
         r=resolution (&running1,&run1);
-			}while((r>3 || r<1) && running1!=0) ;
-      afficher_resultat (ecran,sol,r,&enig) ;
+			}while((r>3 || r<1) && run1!=0) ;
+afficher_resultat (ecran,sol,r,&en) ;
+        
+      while(run1)
+{
+ SDL_WaitEvent(&event) ;
+   switch(event.type)
+{
+ case SDL_QUIT :
+  run1=0 ;
+  break ;   
+ case SDL_KEYDOWN:
+ switch(event.key.keysym.sym)
+{
+ case SDLK_ESCAPE :
+   run1=0 ;
+ break ;
 }
+  break ;
+}  
+}
+}while(r!=sol);
+}
+//END_ENIGMES
 
-}*/
 y = splitennemi(y);
 collisionennemi(&perso,&ennemi,&camera,&vie);
 

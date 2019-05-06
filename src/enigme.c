@@ -51,7 +51,7 @@ int resolution (int * running,int *run )
 {
 	SDL_Event event ;
   int r=0 ;
-	SDL_PollEvent(&event);
+	SDL_WaitEvent(&event);
 	switch(event.type)
 	{
 		  case SDL_QUIT:
@@ -68,7 +68,7 @@ int resolution (int * running,int *run )
 			  case  SDLK_a: 
 			   r= 1;
 			   break ;
-			   case  SDLK_z :
+			   case  SDLK_z:
 			   r= 2;
 			   break;
 			   case SDLK_e: 
@@ -87,13 +87,13 @@ int resolution (int * running,int *run )
  
  	if (r==sol)
  	{
- 		en->img=IMG_Load("../assets/enigmes/00.jpg");
+ 		en->img=IMG_Load("../assets/enigmes/00.jpg") ;
  		SDL_BlitSurface(en->img, NULL, ecran, &(en->p)) ;
         SDL_Flip(ecran);
  	}
  	else
  	{
- 		en->img=IMG_Load("../assets/enigmes/00.jpg");
+ 		en->img=IMG_Load("../assets/enigmes/11.jpg");
  		SDL_BlitSurface(en->img, NULL, ecran, &(en->p)) ;
         SDL_Flip(ecran);
  	}

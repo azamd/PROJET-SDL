@@ -1,0 +1,262 @@
+\hypertarget{perso_8h}{}\section{perso.\+h File Reference}
+\label{perso_8h}\index{perso.\+h@{perso.\+h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structperso}{perso}
+\item 
+struct \hyperlink{structvie}{vie}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structperso}{perso} \hyperlink{perso_8h_a1c7a32a9b48d6f089882757a219edf09}{perso}
+\item 
+typedef struct \hyperlink{structvie}{vie} \hyperlink{perso_8h_a5a50eadb578d4b4b9db54fdffc9b3c48}{vie}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{perso_8h_a92275cef2e188dc29db04259de954b11}{initialiserperso} (\hyperlink{structperso}{perso} $\ast$\hyperlink{structperso}{perso})
+\item 
+void \hyperlink{perso_8h_a7c0b92c5fffabbba594dff663891bf9f}{initialiserperso2} (\hyperlink{structperso}{perso} $\ast$\hyperlink{structperso}{perso})
+\item 
+void \hyperlink{perso_8h_a57f20a6a3972160714991f2de5395137}{initialiserperso3} (\hyperlink{structperso}{perso} $\ast$\hyperlink{structperso}{perso})
+\item 
+void \hyperlink{perso_8h_a264887adbc370edb98b74e418927323c}{freefurfaceperso} (\hyperlink{structperso}{perso} $\ast$\hyperlink{structperso}{perso})
+\item 
+int \hyperlink{perso_8h_a0d74fe9f6951a7e303fa3adf86756c0d}{mouv} (int d, int q, int z, int s, int x, \hyperlink{structperso}{perso} \hyperlink{structperso}{perso}, \hyperlink{structescalier}{escalier} \hyperlink{structescalier}{escalier}, S\+D\+L\+\_\+\+Rect camera)
+\item 
+void \hyperlink{perso_8h_a9c143745d0cf199d30f2f363ce5f6568}{splitperso2} (int d, int q, int $\ast$x)
+\item 
+void \hyperlink{perso_8h_a30501f32e12750a6b217d3967aa172f6}{mouvperso2} (int d, int q, \hyperlink{structperso}{perso} $\ast$\hyperlink{structperso}{perso}, int jump, int $\ast$saut, S\+D\+L\+\_\+\+Rect camera, \hyperlink{structmap}{map} \hyperlink{structmap}{map}, int prevd, int prevq, int $\ast$continuer, S\+D\+L\+\_\+\+Surface $\ast$ecran, int $\ast$save)
+\item 
+void \hyperlink{perso_8h_a75c3f45186c801f2e7d65e9f912150d3}{mouvperso3} (int d, int q, \hyperlink{structperso}{perso} $\ast$\hyperlink{structperso}{perso}, int jump, int $\ast$saut, S\+D\+L\+\_\+\+Rect camera, \hyperlink{structmap}{map} \hyperlink{structmap}{map}, int prevd, int prevq, int $\ast$continuer, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\item 
+void \hyperlink{perso_8h_a9e46c2dae928e6c42f443a253545acac}{obstacle2} (\hyperlink{structvie}{vie} $\ast$\hyperlink{structvie}{vie}, \hyperlink{structmap}{map} \hyperlink{structmap}{map}, \hyperlink{structperso}{perso} $\ast$\hyperlink{structperso}{perso}, S\+D\+L\+\_\+\+Rect $\ast$camera)
+\item 
+void \hyperlink{perso_8h_a79a30dbeaea2a0e6c1051068af3ef5a8}{obstacle} (\hyperlink{structvie}{vie} $\ast$\hyperlink{structvie}{vie}, \hyperlink{structmap}{map} \hyperlink{structmap}{map}, \hyperlink{structperso}{perso} $\ast$\hyperlink{structperso}{perso}, S\+D\+L\+\_\+\+Rect $\ast$camera)
+\item 
+\hyperlink{structperso}{perso} \hyperlink{perso_8h_a0222642fc301fbf71f080a70c215a4d4}{mouvement} (\hyperlink{structperso}{perso} \hyperlink{structperso}{perso}, S\+D\+L\+\_\+\+Rect camera, int h, int d, int q, int z, int s, \hyperlink{structescalier}{escalier} \hyperlink{structescalier}{escalier}, int prevd, int prevq, int $\ast$saut, int jump, int speed)
+\item 
+void \hyperlink{perso_8h_a8162a4e4d9c384228fa988ca709380c3}{afficherperso} (\hyperlink{structperso}{perso} \hyperlink{structperso}{perso}, S\+D\+L\+\_\+\+Surface $\ast$ecran, int x)
+\item 
+void \hyperlink{perso_8h_a745a3d387fc9547b8474bc07488812ef}{initialiservie} (\hyperlink{structvie}{vie} $\ast$\hyperlink{structvie}{vie})
+\item 
+void \hyperlink{perso_8h_a17d93e29ecad63f37a31da923cef8650}{freesurfacevie} (\hyperlink{structvie}{vie} $\ast$\hyperlink{structvie}{vie})
+\item 
+void \hyperlink{perso_8h_a5420109bd929fed754259b81a6f2114c}{affichervie} (\hyperlink{structvie}{vie} $\ast$\hyperlink{structvie}{vie}, \hyperlink{structperso}{perso} \hyperlink{structperso}{perso}, S\+D\+L\+\_\+\+Surface $\ast$ecran)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{perso_8h_a1c7a32a9b48d6f089882757a219edf09}\label{perso_8h_a1c7a32a9b48d6f089882757a219edf09}} 
+\index{perso.\+h@{perso.\+h}!perso@{perso}}
+\index{perso@{perso}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{perso}{perso}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structperso}{perso} \hyperlink{structperso}{perso}}
+
+\mbox{\Hypertarget{perso_8h_a5a50eadb578d4b4b9db54fdffc9b3c48}\label{perso_8h_a5a50eadb578d4b4b9db54fdffc9b3c48}} 
+\index{perso.\+h@{perso.\+h}!vie@{vie}}
+\index{vie@{vie}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{vie}{vie}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structvie}{vie} \hyperlink{structvie}{vie}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{perso_8h_a8162a4e4d9c384228fa988ca709380c3}\label{perso_8h_a8162a4e4d9c384228fa988ca709380c3}} 
+\index{perso.\+h@{perso.\+h}!afficherperso@{afficherperso}}
+\index{afficherperso@{afficherperso}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{afficherperso()}{afficherperso()}}
+{\footnotesize\ttfamily void afficherperso (\begin{DoxyParamCaption}\item[{\hyperlink{structperso}{perso}}]{perso,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran,  }\item[{int}]{x }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8h_a8162a4e4d9c384228fa988ca709380c3_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{perso_8h_a5420109bd929fed754259b81a6f2114c}\label{perso_8h_a5420109bd929fed754259b81a6f2114c}} 
+\index{perso.\+h@{perso.\+h}!affichervie@{affichervie}}
+\index{affichervie@{affichervie}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{affichervie()}{affichervie()}}
+{\footnotesize\ttfamily void affichervie (\begin{DoxyParamCaption}\item[{\hyperlink{structvie}{vie} $\ast$}]{vie,  }\item[{\hyperlink{structperso}{perso}}]{perso,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8h_a5420109bd929fed754259b81a6f2114c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{perso_8h_a264887adbc370edb98b74e418927323c}\label{perso_8h_a264887adbc370edb98b74e418927323c}} 
+\index{perso.\+h@{perso.\+h}!freefurfaceperso@{freefurfaceperso}}
+\index{freefurfaceperso@{freefurfaceperso}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{freefurfaceperso()}{freefurfaceperso()}}
+{\footnotesize\ttfamily void freefurfaceperso (\begin{DoxyParamCaption}\item[{\hyperlink{structperso}{perso} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8h_a264887adbc370edb98b74e418927323c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{perso_8h_a17d93e29ecad63f37a31da923cef8650}\label{perso_8h_a17d93e29ecad63f37a31da923cef8650}} 
+\index{perso.\+h@{perso.\+h}!freesurfacevie@{freesurfacevie}}
+\index{freesurfacevie@{freesurfacevie}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{freesurfacevie()}{freesurfacevie()}}
+{\footnotesize\ttfamily void freesurfacevie (\begin{DoxyParamCaption}\item[{\hyperlink{structvie}{vie} $\ast$}]{vie }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8h_a17d93e29ecad63f37a31da923cef8650_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{perso_8h_a92275cef2e188dc29db04259de954b11}\label{perso_8h_a92275cef2e188dc29db04259de954b11}} 
+\index{perso.\+h@{perso.\+h}!initialiserperso@{initialiserperso}}
+\index{initialiserperso@{initialiserperso}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{initialiserperso()}{initialiserperso()}}
+{\footnotesize\ttfamily void initialiserperso (\begin{DoxyParamCaption}\item[{\hyperlink{structperso}{perso} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8h_a92275cef2e188dc29db04259de954b11_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{perso_8h_a7c0b92c5fffabbba594dff663891bf9f}\label{perso_8h_a7c0b92c5fffabbba594dff663891bf9f}} 
+\index{perso.\+h@{perso.\+h}!initialiserperso2@{initialiserperso2}}
+\index{initialiserperso2@{initialiserperso2}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{initialiserperso2()}{initialiserperso2()}}
+{\footnotesize\ttfamily void initialiserperso2 (\begin{DoxyParamCaption}\item[{\hyperlink{structperso}{perso} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{perso_8h_a57f20a6a3972160714991f2de5395137}\label{perso_8h_a57f20a6a3972160714991f2de5395137}} 
+\index{perso.\+h@{perso.\+h}!initialiserperso3@{initialiserperso3}}
+\index{initialiserperso3@{initialiserperso3}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{initialiserperso3()}{initialiserperso3()}}
+{\footnotesize\ttfamily void initialiserperso3 (\begin{DoxyParamCaption}\item[{\hyperlink{structperso}{perso} $\ast$}]{perso }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{perso_8h_a745a3d387fc9547b8474bc07488812ef}\label{perso_8h_a745a3d387fc9547b8474bc07488812ef}} 
+\index{perso.\+h@{perso.\+h}!initialiservie@{initialiservie}}
+\index{initialiservie@{initialiservie}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{initialiservie()}{initialiservie()}}
+{\footnotesize\ttfamily void initialiservie (\begin{DoxyParamCaption}\item[{\hyperlink{structvie}{vie} $\ast$}]{vie }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8h_a745a3d387fc9547b8474bc07488812ef_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{perso_8h_a0d74fe9f6951a7e303fa3adf86756c0d}\label{perso_8h_a0d74fe9f6951a7e303fa3adf86756c0d}} 
+\index{perso.\+h@{perso.\+h}!mouv@{mouv}}
+\index{mouv@{mouv}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{mouv()}{mouv()}}
+{\footnotesize\ttfamily int mouv (\begin{DoxyParamCaption}\item[{int}]{d,  }\item[{int}]{q,  }\item[{int}]{z,  }\item[{int}]{s,  }\item[{int}]{x,  }\item[{\hyperlink{structperso}{perso}}]{perso,  }\item[{\hyperlink{structescalier}{escalier}}]{escalier,  }\item[{S\+D\+L\+\_\+\+Rect}]{camera }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{perso_8h_a0d74fe9f6951a7e303fa3adf86756c0d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{perso_8h_a0d74fe9f6951a7e303fa3adf86756c0d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{perso_8h_a0222642fc301fbf71f080a70c215a4d4}\label{perso_8h_a0222642fc301fbf71f080a70c215a4d4}} 
+\index{perso.\+h@{perso.\+h}!mouvement@{mouvement}}
+\index{mouvement@{mouvement}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{mouvement()}{mouvement()}}
+{\footnotesize\ttfamily \hyperlink{structperso}{perso} mouvement (\begin{DoxyParamCaption}\item[{\hyperlink{structperso}{perso}}]{perso,  }\item[{S\+D\+L\+\_\+\+Rect}]{camera,  }\item[{int}]{h,  }\item[{int}]{d,  }\item[{int}]{q,  }\item[{int}]{z,  }\item[{int}]{s,  }\item[{\hyperlink{structescalier}{escalier}}]{escalier,  }\item[{int}]{prevd,  }\item[{int}]{prevq,  }\item[{int $\ast$}]{saut,  }\item[{int}]{jump,  }\item[{int}]{speed }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8h_a0222642fc301fbf71f080a70c215a4d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{perso_8h_a0222642fc301fbf71f080a70c215a4d4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{perso_8h_a30501f32e12750a6b217d3967aa172f6}\label{perso_8h_a30501f32e12750a6b217d3967aa172f6}} 
+\index{perso.\+h@{perso.\+h}!mouvperso2@{mouvperso2}}
+\index{mouvperso2@{mouvperso2}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{mouvperso2()}{mouvperso2()}}
+{\footnotesize\ttfamily void mouvperso2 (\begin{DoxyParamCaption}\item[{int}]{d,  }\item[{int}]{q,  }\item[{\hyperlink{structperso}{perso} $\ast$}]{perso,  }\item[{int}]{jump,  }\item[{int $\ast$}]{saut,  }\item[{S\+D\+L\+\_\+\+Rect}]{camera,  }\item[{\hyperlink{structmap}{map}}]{map,  }\item[{int}]{prevd,  }\item[{int}]{prevq,  }\item[{int $\ast$}]{continuer,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran,  }\item[{int $\ast$}]{save }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{perso_8h_a30501f32e12750a6b217d3967aa172f6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{perso_8h_a75c3f45186c801f2e7d65e9f912150d3}\label{perso_8h_a75c3f45186c801f2e7d65e9f912150d3}} 
+\index{perso.\+h@{perso.\+h}!mouvperso3@{mouvperso3}}
+\index{mouvperso3@{mouvperso3}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{mouvperso3()}{mouvperso3()}}
+{\footnotesize\ttfamily void mouvperso3 (\begin{DoxyParamCaption}\item[{int}]{d,  }\item[{int}]{q,  }\item[{\hyperlink{structperso}{perso} $\ast$}]{perso,  }\item[{int}]{jump,  }\item[{int $\ast$}]{saut,  }\item[{S\+D\+L\+\_\+\+Rect}]{camera,  }\item[{\hyperlink{structmap}{map}}]{map,  }\item[{int}]{prevd,  }\item[{int}]{prevq,  }\item[{int $\ast$}]{continuer,  }\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{ecran }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{perso_8h_a75c3f45186c801f2e7d65e9f912150d3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{perso_8h_a79a30dbeaea2a0e6c1051068af3ef5a8}\label{perso_8h_a79a30dbeaea2a0e6c1051068af3ef5a8}} 
+\index{perso.\+h@{perso.\+h}!obstacle@{obstacle}}
+\index{obstacle@{obstacle}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{obstacle()}{obstacle()}}
+{\footnotesize\ttfamily void obstacle (\begin{DoxyParamCaption}\item[{\hyperlink{structvie}{vie} $\ast$}]{vie,  }\item[{\hyperlink{structmap}{map}}]{map,  }\item[{\hyperlink{structperso}{perso} $\ast$}]{perso,  }\item[{S\+D\+L\+\_\+\+Rect $\ast$}]{camera }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{perso_8h_a79a30dbeaea2a0e6c1051068af3ef5a8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{perso_8h_a9e46c2dae928e6c42f443a253545acac}\label{perso_8h_a9e46c2dae928e6c42f443a253545acac}} 
+\index{perso.\+h@{perso.\+h}!obstacle2@{obstacle2}}
+\index{obstacle2@{obstacle2}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{obstacle2()}{obstacle2()}}
+{\footnotesize\ttfamily void obstacle2 (\begin{DoxyParamCaption}\item[{\hyperlink{structvie}{vie} $\ast$}]{vie,  }\item[{\hyperlink{structmap}{map}}]{map,  }\item[{\hyperlink{structperso}{perso} $\ast$}]{perso,  }\item[{S\+D\+L\+\_\+\+Rect $\ast$}]{camera }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{perso_8h_a9e46c2dae928e6c42f443a253545acac_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{perso_8h_a9c143745d0cf199d30f2f363ce5f6568}\label{perso_8h_a9c143745d0cf199d30f2f363ce5f6568}} 
+\index{perso.\+h@{perso.\+h}!splitperso2@{splitperso2}}
+\index{splitperso2@{splitperso2}!perso.\+h@{perso.\+h}}
+\subsubsection{\texorpdfstring{splitperso2()}{splitperso2()}}
+{\footnotesize\ttfamily void splitperso2 (\begin{DoxyParamCaption}\item[{int}]{d,  }\item[{int}]{q,  }\item[{int $\ast$}]{x }\end{DoxyParamCaption})}
+

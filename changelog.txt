@@ -52,6 +52,19 @@ Member: Mohamed
 - Optimize all the codes
 - Increase game fps
 - Collapse project files into seperated folders
-
-
+=============================================================================
+30 - 04 - 2019
+** Updates (done)
+- Main Menu Update (New Game)
+- Acceleration
+- Chrono (Not integrated)
+- Mini Map
+- Enigmes added
+** Optimisation
+- Enigmes bug fixed
+- Mini Map optimized
+**Bugs
+- Escape Bug
+- rotozoom on enigmes
+- Enigme Bug/Laggy
 

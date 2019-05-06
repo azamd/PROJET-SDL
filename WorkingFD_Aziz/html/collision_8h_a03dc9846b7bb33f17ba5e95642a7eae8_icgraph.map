@@ -1,8 +1,0 @@
-<map id="collisionescalier" name="collisionescalier">
-<area shape="rect" id="node2" href="$perso_8h.html#a0d74fe9f6951a7e303fa3adf86756c0d" title="mouv" alt="" coords="186,5,241,32"/>
-<area shape="rect" id="node6" href="$perso_8h.html#a0222642fc301fbf71f080a70c215a4d4" title="mouvement" alt="" coords="168,56,259,83"/>
-<area shape="rect" id="node7" href="$scrolling_8h.html#a6e6b048b1c514f9a76913783b17b568f" title="To scrolling . " alt="" coords="178,107,249,133"/>
-<area shape="rect" id="node3" href="$level1_8h.html#afd6b3dbc219eac712d9b2075aea92cba" title="level1" alt="" coords="307,56,363,83"/>
-<area shape="rect" id="node4" href="$jeux_8h.html#ad38cf6359c3f38f66e6aa46a96ecc347" title="jeux" alt="" coords="411,56,457,83"/>
-<area shape="rect" id="node5" href="$main_8c.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="505,56,556,83"/>
-</map>

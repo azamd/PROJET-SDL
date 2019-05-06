@@ -1,5 +1,0 @@
-<map id="saves" name="saves">
-<area shape="rect" id="node2" href="$structennemis.html" title="ennemis" alt="" coords="5,5,76,32"/>
-<area shape="rect" id="node3" href="$structperso.html" title="perso" alt="" coords="100,5,155,32"/>
-<area shape="rect" id="node4" href="$structvie.html" title="vie" alt="" coords="179,5,217,32"/>
-</map>

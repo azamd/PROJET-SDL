@@ -1,6 +1,5 @@
 #include "fonction.h"
 #include "enigme.h"
-
 void savee(ennemis ennemi,perso perso,int page1,int page2,vie vie,int saut,SDL_Rect camera)
 {
 FILE *f;
@@ -41,7 +40,7 @@ if(saves.level==2||saves.level==3)
 
 void level1(int *save,int lvl)
 {
-
+Imm mecran,mm,curseur;
 perso perso ;
 vie vie;
 map map ;
@@ -65,10 +64,24 @@ int page1=1,page2=1;
 char image[30]="";
 int run1 =1,firsttime=0  ;
 SDL_Event event;
-ecran = SDL_SetVideoMode(1000, 560, 32, SDL_HWSURFACE | SDL_DOUBLEBUF | SDL_RESIZABLE);
+
+
+
+
+
+ecran = SDL_SetVideoMode(1000, 560, 32, SDL_HWSURFACE | SDL_DOUBLEBUF /* | SDL_RESIZABLE*/);
+
+
+mecran.srf = SDL_SetVideoMode(1000, 560, 32, SDL_HWSURFACE | SDL_DOUBLEBUF /* | SDL_RESIZABLE*/);
+
+
+//loadmm(&curseur,&mm);
+
+
 SDL_Rect camera = { 0, 0, ecran->w, ecran->h };
 camera.x=0;
 camera.y=0;
+initmm(&perso,&curseur,&mm); 
 initialiserfond(&map);
 initialiserescalier(&escalier);
 initialiserperso(&perso);
@@ -192,7 +205,14 @@ SDL_FillRect(ecran, NULL, SDL_MapRGB(ecran->format, 255, 255, 255));
 camera = scrolling(d,q,z,s,h,camera,perso,escalier,speed);
 camera = collision(camera,perso);
 printf("h = %d\n",h);
+
+
+
+
+
 perso=mouvement(perso,camera,h,d,q,z,s,escalier,prevd,prevq,&saut,jump,speed);
+
+
 
 //START_ENIGMES
 
@@ -237,11 +257,14 @@ collisionennemi(&perso,&ennemi,&camera,&vie);
 afficherfond(map,&camera,ecran);
 afficherperso(perso,ecran,x);
 affichervie(&vie,perso,ecran);
+display(ecran,&curseur,&mm);
 ennemi=mouvennemi(ennemi,perso,d,q,camera,ecran,&ennmouv,&w,&y,mvmspeed);
 afficherennemi(ennemi,ecran,y);
 prevd = d;
 prevq = q;
+mini_map(&curseur,&perso);
 SDL_Flip(ecran);
+//SDL_Flip(mecran.srf);
 
 SDL_Delay(80);
 }

@@ -26,7 +26,17 @@ typedef struct vie
 	SDL_Surface *fond4;
 	SDL_Surface *fond5;
 }vie;
+typedef struct 
+{ 
+  SDL_Surface* srf;
+  SDL_Rect pos;
+}Imm; 
 
+
+void initmm(perso *perso,Imm* curseur,Imm* mini_map);
+void loadmm(Imm* curseur,Imm* mini_map);
+void display(SDL_Surface *ecran ,Imm* curseur,Imm* mini_map );
+void mini_map(Imm * curseur ,perso *perso);
 
 void initialiserperso(perso *perso);
 void initialiserperso2(perso *perso);

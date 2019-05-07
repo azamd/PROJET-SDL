@@ -1,5 +1,5 @@
-prog:scrolling.o collision.o perso.o map.o ennemi.o level1.o jeux.o main.o menuingame.o enigme.o minimap.o submenu.o
-	gcc scrolling.o collision.o perso.o map.o ennemi.o  level1.o jeux.o main.o menuingame.o enigme.o minimap.o submenu.o -lSDL -lSDL_image -lSDL_mixer -o prog -g
+prog:scrolling.o collision.o perso.o map.o ennemi.o level1.o jeux.o main.o menuingame.o enigme.o minimap.o submenu.o animation.o
+	gcc scrolling.o collision.o perso.o map.o ennemi.o  level1.o jeux.o main.o menuingame.o enigme.o minimap.o submenu.o animation.o -lSDL -lSDL_image -lSDL_mixer -o prog -g
 
 main.o:main.c
 	gcc -c main.c -g
@@ -10,6 +10,9 @@ jeux.o:jeux.c
 submenu.o:submenu.c
 	gcc -c submenu.c -g
 
+animation.o:animation.c
+	gcc -c animation.c -g
+	
 enigme.o:enigme.c
 	gcc -c enigme.c -g
 

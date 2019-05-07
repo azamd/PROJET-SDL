@@ -7,13 +7,13 @@
 #include "SDL/SDL_mixer.h"
 #include "submenu.h"
 #include "fonction.h"
-
+#include "animation.h"
 int main(int argc, char *argv[])
 
 {
     SDL_Surface *ecran = NULL, *imageDeFond = NULL,*solo = NULL,*multi = NULL,*sett = NULL,*cred = NULL,*exit = NULL,*Volume = NULL,*Menu0 = NULL,*Menu1 = NULL, *Menu2 = NULL;
     SDL_Rect position ;
-int running=1,i=0,j=4,keyboard=0,mouse=1,controller=0,k=3 ;
+int running=1,i=0,j=4,keyboard=0,mouse=1,controller=0,k=3 ,fr=0,actuel=0,prec=0,frr=0 ; ;
 Objet volume0 ,volume25,volume50,volume75,volume100,sous_menumouse,sous_menukey,sous_menucontroller ;
 
     Mix_Music *music ;
@@ -32,6 +32,10 @@ Objet volume0 ,volume25,volume50,volume75,volume100,sous_menumouse,sous_menukey,
 
     ecran = SDL_SetVideoMode(900,425, 32, SDL_HWSURFACE | SDL_DOUBLEBUF);
     SDL_WM_SetCaption("THE ETERNAL STONES ", NULL);
+	
+
+Objett tab [200],tab2[200] ;
+
 
 	setup (&sous_menukey,&sous_menumouse ,&volume100,&volume75,&volume50,&volume25,&volume0,&sous_menucontroller) ;
 
@@ -61,9 +65,14 @@ Objet volume0 ,volume25,volume50,volume75,volume100,sous_menumouse,sous_menukey,
     Volume=IMG_Load("../assets/menu/volume.png") ;
 
     SDL_EnableKeyRepeat(100, 10);
+
+  load_transition1(tab) ;
+  //load_transition(tab2) ;
     while (continuer)
     {
         ecran = SDL_SetVideoMode(900, 425, 32, SDL_HWSURFACE | SDL_DOUBLEBUF /*| SDL_RESIZABLE | SDL_FULLSCREEN */);
+
+
         SDL_WaitEvent(&event);
 
         switch(event.type)
@@ -534,9 +543,23 @@ Objet volume0 ,volume25,volume50,volume75,volume100,sous_menumouse,sous_menukey,
 
 
 
+                  if (fr<=179)   
+                   { 
+                     actuel = SDL_GetTicks();
+                      if (actuel - prec > 30)
+                         {
+                           update_transition(ecran ,tab,&fr) ;
+                           prec = actuel;
 
+                         }
+                      else 
+                         {
+                           SDL_Delay(30 - (actuel - prec));
+                         }
+                   }
 
-
+                  else
+                  {
         SDL_BlitSurface(imageDeFond, NULL, ecran, &position);
 
         if(so==1)
@@ -549,7 +572,7 @@ Objet volume0 ,volume25,volume50,volume75,volume100,sous_menumouse,sous_menukey,
             SDL_BlitSurface(sett, NULL, ecran, &position);
         else if(cr==1)
             SDL_BlitSurface(cred, NULL, ecran, &position);
-
+                  }
         SDL_Flip(ecran);
 
     }

@@ -1,5 +1,5 @@
 prog:scrolling.o collision.o perso.o map.o ennemi.o level1.o jeux.o main.o menuingame.o enigme.o minimap.o submenu.o animation.o
-	gcc scrolling.o collision.o perso.o map.o ennemi.o  level1.o jeux.o main.o menuingame.o enigme.o minimap.o submenu.o animation.o -lSDL -lSDL_image -lSDL_mixer -o prog -g
+	gcc scrolling.o collision.o perso.o map.o ennemi.o  level1.o jeux.o main.o menuingame.o enigme.o minimap.o submenu.o animation.o -lSDL -lSDL_image -lSDL_mixer -lSDL_ttf -o prog -g
 
 main.o:main.c
 	gcc -c main.c -g

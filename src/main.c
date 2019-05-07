@@ -70,6 +70,7 @@ Objett tab [200],tab2[200] ;
   //load_transition(tab2) ;
     while (continuer)
     {
+	actuel = SDL_GetTicks();
         ecran = SDL_SetVideoMode(900, 425, 32, SDL_HWSURFACE | SDL_DOUBLEBUF /*| SDL_RESIZABLE | SDL_FULLSCREEN */);
 
 
@@ -544,9 +545,8 @@ Objett tab [200],tab2[200] ;
 
 
                   if (fr<=179)   
-                   { 
-                     actuel = SDL_GetTicks();
-                      if (actuel - prec > 30)
+                   { update_transition(ecran ,tab,&fr) ;
+                     if (actuel - prec > 60)
                          {
                            update_transition(ecran ,tab,&fr) ;
                            prec = actuel;
@@ -554,7 +554,7 @@ Objett tab [200],tab2[200] ;
                          }
                       else 
                          {
-                           SDL_Delay(30 - (actuel - prec));
+                           SDL_Delay(60 - (actuel - prec));
                          }
                    }
 

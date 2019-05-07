@@ -1,5 +1,10 @@
 #include "fonction.h"
 #include "enigme.h"
+#include "chrono.h"
+#include <SDL/SDL_image.h>
+#include <SDL/SDL_mixer.h>
+#include <SDL/SDL_ttf.h>
+#include <string.h>
 void savee(ennemis ennemi,perso perso,int page1,int page2,vie vie,int saut,SDL_Rect camera)
 {
 FILE *f;
@@ -46,6 +51,26 @@ vie vie;
 map map ;
 escalier escalier;
 ennemis ennemi ;
+
+
+/* FONT */
+SDL_Surface *ecran = NULL,*image1=NULL,*texte = NULL;
+TTF_Init();
+TTF_Font *police = NULL; 
+SDL_Rect position;
+
+int tempsActuel = 0, tempsPrecedent = 0, compteur = 0,fps=0,fpm=0,fph=0; //calcul fps
+char temps[30] = ""; 
+
+SDL_Color couleurNoire = {0, 0, 0}, couleurBlanche = {255, 255, 255}; //couleur
+police = TTF_OpenFont("../assets/fonts/arial.ttf", 25); //chargement type du police
+texte = TTF_RenderText_Blended(police, temps, couleurBlanche); // affichage du police
+float dt;
+
+tempsActuel = SDL_GetTicks();
+sprintf(temps, "Temps : %d", compteur);
+/* FONT_END */
+
 /* ENIGMES_DECLARATION */
 enigme  enig,en;
 int ennmouv,w=10;
@@ -54,7 +79,10 @@ int t1=0,t2=0;
 int saut=1;
 int mvmspeed = 20;
 int speed = 50;
-SDL_Surface *ecran = NULL,*image1=NULL;
+
+
+
+
 
 srand(time(NULL)) ;
 
@@ -207,7 +235,37 @@ camera = collision(camera,perso);
 printf("h = %d\n",h);
 
 
+        tempsActuel = SDL_GetTicks();
+          dt=tempsActuel - tempsPrecedent;
+         
+      if ( dt >= 1000) 
+        {
+          compteur += 1000; 
+          fps=compteur/1000;
+           
+               
+             if (fps>59)
+                 { fpm=(fps/60);
+                 
+                   
+                   if(fpm>59)
+                      fph=(fpm/60);
+                  
+                  
+                 }
+             
+           
+           
 
+              
+            sprintf(temps,"Temps: %d :%d :%d",fph,fpm,fps-(60*fpm));
+           SDL_FreeSurface(texte);
+
+             texte = TTF_RenderText_Blended(police, temps, couleurBlanche);
+
+
+            tempsPrecedent = tempsActuel; 
+        }
 
 
 perso=mouvement(perso,camera,h,d,q,z,s,escalier,prevd,prevq,&saut,jump,speed);
@@ -251,6 +309,13 @@ afficher_resultat (ecran,sol,r,&en) ;
 }
 //END_ENIGMES
 
+
+
+        
+
+
+
+
 y = splitennemi(y);
 collisionennemi(&perso,&ennemi,&camera,&vie);
 
@@ -263,6 +328,11 @@ afficherennemi(ennemi,ecran,y);
 prevd = d;
 prevq = q;
 mini_map(&curseur,&perso);
+        position.x =220;
+        position.y = 0;
+
+       SDL_BlitSurface(texte, NULL, ecran, &position); 
+       SDL_SetColorKey(texte,SDL_SRCCOLORKEY,SDL_MapRGB(texte->format,0,0,0));   
 SDL_Flip(ecran);
 //SDL_Flip(mecran.srf);
 

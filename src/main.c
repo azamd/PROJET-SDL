@@ -1,3 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <SDL/SDL.h>
+#include <SDL/SDL_image.h>
+#include <SDL/SDL_ttf.h>
+#include "SDL/SDL_gfxPrimitives.h"
+#include "SDL/SDL_mixer.h"
+#include "submenu.h"
 #include "fonction.h"
 
 int main(int argc, char *argv[])
@@ -5,6 +13,8 @@ int main(int argc, char *argv[])
 {
     SDL_Surface *ecran = NULL, *imageDeFond = NULL,*solo = NULL,*multi = NULL,*sett = NULL,*cred = NULL,*exit = NULL,*Volume = NULL,*Menu0 = NULL,*Menu1 = NULL, *Menu2 = NULL;
     SDL_Rect position ;
+int running=1,i=0,j=4,keyboard=0,mouse=1,controller=0,k=3 ;
+Objet volume0 ,volume25,volume50,volume75,volume100,sous_menumouse,sous_menukey,sous_menucontroller ;
 
     Mix_Music *music ;
 
@@ -22,6 +32,8 @@ int main(int argc, char *argv[])
 
     ecran = SDL_SetVideoMode(900,425, 32, SDL_HWSURFACE | SDL_DOUBLEBUF);
     SDL_WM_SetCaption("THE ETERNAL STONES ", NULL);
+
+	setup (&sous_menukey,&sous_menumouse ,&volume100,&volume75,&volume50,&volume25,&volume0,&sous_menucontroller) ;
 
     if(Mix_OpenAudio(44100,MIX_DEFAULT_FORMAT,MIX_DEFAULT_CHANNELS,1024)==-1)
     {
@@ -419,12 +431,46 @@ int main(int argc, char *argv[])
                             case SDLK_ESCAPE:
                                 continuer0=0 ;
                                 break ;
-                            case SDLK_UP :
-                                z = z + 2 ;
-                                break ;
-                            case SDLK_DOWN :
-                                z = z - 2 ;
-                                break ;
+				                case SDLK_RIGHT :
+			z = z + 2 ;
+                  if(i==1)
+                  {
+                    j++ ;
+                    if(j>4)
+                    j=4 ;
+                  }
+                  else if (i==0)
+                  {
+                   k++ ;
+                   if(k>3)
+                    k=1 ;
+                  }
+                 break ;
+                 case SDLK_LEFT :
+			z = z - 2 ;
+                 if(i)
+                 {
+                    j-- ;
+                    if(j<0)
+                    j=0 ;   
+                 } 
+                  else if (i==0)
+                  {
+                    k -- ;
+                   if(k<1)
+                    k=3 ;
+                  }             
+                 break ;
+                 case SDLK_UP :
+                   i--  ;
+                   if(i<0)
+                   i=1 ;
+                 break ;
+                 case SDLK_DOWN :
+                   i ++ ;
+                   if(i>1)
+                   i=0 ;
+                  break ;
                             case SDLK_KP_PLUS :
                                 z = z + 2 ;
                                 break ;
@@ -449,8 +495,31 @@ int main(int argc, char *argv[])
 
                         Mix_VolumeMusic(z);
 
-                        SDL_BlitSurface(imageDeFond, NULL, ecran, &position);
-                        SDL_BlitSurface(Volume, NULL, ecran, &position);
+ if(i==0)
+  {
+    if(k==2)
+    SDL_BlitSurface(sous_menukey.img,NULL,ecran,&(sous_menukey.pos)) ;
+    else if (k==1)
+    SDL_BlitSurface(sous_menumouse.img,NULL,ecran,&(sous_menumouse.pos)) ;  
+    else if (k==3) 
+    SDL_BlitSurface(sous_menucontroller.img,NULL,ecran,&(sous_menucontroller.pos)) ;  
+
+  }
+  else if(i)
+  {
+
+    if (j==4)
+   SDL_BlitSurface(volume100.img,NULL,ecran,&(volume100.pos)) ;  
+   else if (j==3)
+   SDL_BlitSurface(volume75.img,NULL,ecran,&(volume75.pos)) ;  
+   else if (j==2) 
+   SDL_BlitSurface(volume50.img,NULL,ecran,&(volume50.pos)) ;  
+    else if(j==1)
+   SDL_BlitSurface(volume25.img,NULL,ecran,&(volume25.pos)) ;  
+    else if (j==0)
+   SDL_BlitSurface(volume0.img,NULL,ecran,&(volume0.pos)) ;  
+
+  }
 
                         SDL_Flip(ecran);
                     }
